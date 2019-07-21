@@ -262,22 +262,22 @@
         
         <div class="col s12 m6">
           <div class="card-panel grey lighten-3">
-            <form>
+            <form action="https://formspree.io/email@domain.tld" method="POST">
                 <h5>Please fill out this form</h5>
                 <div class="input-field">
-                  <input type="text" placeholder="Name" id="name" required>
+                  <input type="text" placeholder="Name" id="name" name="name" required>
                   <label for="name">Name</label>
                 </div>
                 <div class="input-field">
-                  <input type="email" placeholder="Email" id="email" required>
+                  <input type="email" placeholder="Email" id="email" name="email" required>
                   <label for="email">Email</label>
                 </div>
                 <div class="input-field">
-                  <input type="text" placeholder="Phone" id="phone">
+                  <input type="text" placeholder="Phone" name="phone" id="phone">
                   <label for="phone">Phone</label>
                 </div>
                 <div class="input-field">
-                  <textarea class="materialize-textarea" id="message" placeholder="Enter message" required></textarea>
+                  <textarea class="materialize-textarea" id="message" name="message" placeholder="Enter message" required></textarea>
                   <label for="name">Message</label>
                 </div>
                 <input type="submit" value="Submit" class="btn waves-effect" id="submit">
